@@ -1,18 +1,14 @@
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    document.getElementsByClassName("padding").removeClass = "20px";
-  } else {
-    document.getElementsByClassName("DeletePadding").style.padding = "0px";
-  }
-}
 
 
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 50) {
-       $('#nav').addClass('padding');
-    } else {
-       $('#dynamic').removeClass('newClass');
+var links = document.querySelectorAll(".padding")
+  function scrollFunction() {
+    for( var i = 0; i < links.length; i++ ) {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ) {
+        links[i].style.padding = "0px"
+      } else {
+        links[i].style.padding = "15px"
+      }
+      }
     }
-});
+
+    window.onscroll = function() {scrollFunction()};
