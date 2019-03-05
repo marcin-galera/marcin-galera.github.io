@@ -12,3 +12,10 @@ var links = document.querySelectorAll(".padding")
     }
 
     window.onscroll = function() {scrollFunction()};
+
+  
+
+  //   window.addEventListener("scroll", function (event) {
+  //     var scroll = this.scrollY;
+  //     console.log(scroll)
+  // });
