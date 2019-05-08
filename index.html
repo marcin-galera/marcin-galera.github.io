@@ -1,104 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marcin Galera - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+        <nav id="main_navigation"></nav>
 
-    <div class="menu">
-        <nav>
-            <ul>
-                <li ><a href="#" class="padding">O MNIE</a></li>
-                <li><a href="#aboutMe" class="padding">ZAINTERESOWANIA</a></li>
-                <li><a href="#abilities" class="padding">UMIEJĘTNOŚCI</a></li>
-                <li><a href="#projects" class="padding">PROJEKTY</a></li>
-            </ul>
-        </nav>
-    </div>
+    <header id="section_first">
+        <img src="photos/background_imageHeader.jpg" alt="backgroundImage">
+        <img src="photos/myPhoto.jpg" alt="Marcin Galera">
+        <h1>
+            <div class="heading_big">Marcin Galera</div>
+            <div class="heading_small">Front-End Developer Portfolio</div>
+        </h1>
+        <button><span>Czytaj więcej</span></button>
+    </header>
+
+    <section id="section_about">
+        <div class="content_about">
+            <h2 class="heading">O mnie:</h2>
+            <p class="text_about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci dolorum fugit tenetur ad, optio iusto vero alias nam minus exercitationem ducimus reiciendis eaque modi deserunt labore. Esse, beatae officia.
+            Enim accusantium consequatur laudantium eius quod alias velit, nisi vero libero reprehenderit aliquid laborum facere odit eaque quaerat aperiam voluptates illo voluptate dolores iusto corporis ut est. Illo, porro cum.
+            Expedita ab suscipit maxime sequi consequatur, placeat illum illo dolorem libero laborum iure minima quisquam quos. Magnam, quisquam quod soluta nulla quibusdam illum debitis facilis ex perspiciatis sequi cumque quis!
+            Quae quia illo a itaque corporis, reprehenderit odio labore facere nisi maxime iste velit neque. Voluptas aliquid perferendis minima corrupti, qui repellat similique inventore, optio reprehenderit iure repudiandae numquam vitae?</p>
+        </div>
+    </section>
+
+    <div id="section_skills" >
+        <h2 data-aos="zoom-in-up">Umiejętności:</h2>
+        <div class="content_skills">
+            <article data-aos="zoom-in-up">
+                <img src="photos/HTML5_Badge.svg">
+                <div class="row">
+                    <h3>HTML5</h3>
+                    <p>Bardzo dobra znajomość.</p>
+                </div>
+            </article>
+
+            <article data-aos="zoom-in-up">
+                    <img src="photos/css3.svg">
+                    <div class="row">
+                        <h3>CSS3</h3>
+                        <p>Bardzo dobra znajomość nowych trendów.</p>
+                    </div>
+            </article>
+
+            <article data-aos="zoom-in-up">
+                    <img src="photos/bootstrap-4.svg">
+                    <div class="row">
+                        <h3>Bootstrap</h3>
+                        <p>Bardzo dobra znajomość frameworków CSS.</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/sass-1.svg">
+                    <div class="row">
+                        <h3>SASS</h3>
+                        <p>Bardzo dobra znajomość preprocesorów, "must have" przy projektach.</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/javascript-1.svg">
+                    <div class="row">
+                        <h3>JavaScript</h3>
+                        <p>Bardzo dobra znajomość calościowa, np: klas, konstruktorów, arrow function, destrukturyzacja.</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/json.svg">
+                    <div class="row">
+                        <h3>Json</h3>
+                        <p>Bardzo dobra znajomość, żeby zapisać do local storage, bądź kontaktować się z back-endem.</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/AJAX_logo_by_gengns.svg">
+                    <div class="row">
+                        <h3>Ajax</h3>
+                        <p>Bardzo dobra znajomość, asynchroniczność nie jest mi obca.</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/react.svg">
+                    <div class="row">
+                        <h3>React</h3>
+                        <p>Bardzo dobra znajomość</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/redux.svg">
+                    <div class="row">
+                        <h3>Redux</h3>
+                        <p>Bardzo dobra znajomość</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/git-icon.svg">
+                    <div class="row">
+                        <h3>Git</h3>
+                        <p>Rozwiązywanie konfliktów i praca w grupie mnie nie przeraża.</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/ubuntu-4.svg">
+                    <div class="row">
+                        <h3>Ubuntu</h3>
+                        <p>Z linuxem radzę sobię tak samo dobrze jak z windowsem.</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/scrum.png">
+                    <div class="row">
+                        <h3>Scrum</h3>
+                        <p>Praca w grupie i sprinty to podstawa każdego projektu.</p>
+                    </div>
+            </article>
+            <article data-aos="zoom-in-up">
+                    <img src="photos/photoshop-cc.svg">
+                    <div class="row">
+                        <h3>Photoshop</h3>
+                        <p>Znajomość na poziomie cięcia szablonów psd/tiff i podstawowych sposobów obróbki w celu eksportu grafiki</p>
+                    </div>
+            </article>
 
 
-    <div class="hero">
-        <header><h1>Macin Galera - Front-end Developer</h1></header>
-    </div>
-   
-    <div class="about__container">
-        <div class="container__aside">
-            <div class="swap-on-hover">
-                <img class="swap-on-hover__front-image"  src="photos/myPhoto1.jpg">
-                <img class="swap-on-hover__back-image"  src="photos/myPhoto1.jpg">
-            </div>
-        </div>  
 
-
-        <div class="container__content" id="aboutMe">
-            <h2>O MNIE</h2>
-                <div class="line" ></div>
-            <p>     
-                Jestem programistą-pasjonatem.
-                Jakiś czas temu postanowiłem, że zmienię branżę na taką, w której będę mógł robić to, co lubię – programować strony i aplikacje webowe.
-            </p>
         </div>
     </div>
 
-
-    <div class="abilities__content" id="abilities">
-            <h2>Technologie, które używam:</h2>
-<div class="line"></div>
-        
-            
-        <div class="logos">
-            <img src='photos/html5-brands.svg'> 
-            <img src='photos/css3-brands.svg'> 
-            <img src='photos/js-brands.svg'> 
-            <img src='photos/Git-brands.svg'> 
-        </div>
-    </div>
-<div class="line__allWidth"></div>
-    <div class="header" id="projects"><h2>Projekty:</h2></div>
-    <div class="projects__content">
-        <div class="content__direction">
-            <div class="project__box">
-                <div class="box__image">
-                    
-                    <img src='photos/portfolio_img.jpg'>
-                </div>
-                <div class="box__content">
-                        <h3>Portfolio:</h3>
-                    <a href="https://github.com/marcin-galera/marcin-galera.github.io" target="_blank"><img src="photos/code-brands.svg"></a>
-                    <a href="https://marcin-galera.github.io/" target="_blank"><img src="photos/search-brands.svg"></a>
-                </div>
-            </div>
-        
-
-            <div class="project__box">
-                <div class="box__image">
-                    
-                    <img src='pokedex/screen.jpg'>
-                </div>
-                <div class="box__content">
-                        <h3>Pokedex:</h3>
-                    <a href="pokedex/index.html" target="_blank"><img src="photos/code-brands.svg"></a>
-                    <a href="pokedex/index.html" target="_blank"><img src="photos/search-brands.svg"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
-<div class="line__allWidth"></div>
-    <footer>
-           <div>
-                <strong>© 2018 all rights reserved Marcin Galera</strong>
-            </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
