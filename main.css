@@ -269,6 +269,7 @@ footer {
 
   #experienceAndEducation {
     display: flex;
+    justify-content: center;
   }
 
   #map {
