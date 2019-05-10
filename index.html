@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
-
+    <element onload="myScript">
 </head>
 
 <body>
     <nav id="main_navigation"></nav>
-
     <header id="section_first">
         <img src="photos/background_imageHeader.jpg" alt="backgroundImage">
         <img src="photos/myPhoto.jpg" alt="Marcin Galera">
@@ -23,12 +22,12 @@
             <div class="heading_big">Marcin Galera</div>
             <div class="heading_small">Front-End Developer Portfolio</div>
         </h1>
-        <button><span>Czytaj więcej</span></button>
     </header>
 
     <section id="section_about">
         <div class="content_about">
             <h2 class="heading">O mnie</h2>
+            <button class="showMore_about"><span class="button_content">Pokaż więcej</span></button>
             <p class="text_about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta adipisci dolorum fugit
                 tenetur ad, optio iusto vero alias nam minus exercitationem ducimus reiciendis eaque modi deserunt
                 labore. Esse, beatae officia.
@@ -44,7 +43,7 @@
         </div>
     </section>
 
-    <div id="section_skills">
+    <section id="section_skills">
         <h2 data-aos="zoom-in-up">Umiejętności</h2>
         <div class="content_skills">
             <article data-aos="zoom-in-up">
@@ -54,7 +53,6 @@
                     <p>Bardzo dobra znajomość.</p>
                 </div>
             </article>
-
             <article data-aos="zoom-in-up">
                 <img src="photos/css3.svg">
                 <div class="row">
@@ -62,7 +60,6 @@
                     <p>Bardzo dobra znajomość nowych trendów.</p>
                 </div>
             </article>
-
             <article data-aos="zoom-in-up">
                 <img src="photos/bootstrap-4.svg">
                 <div class="row">
@@ -141,57 +138,51 @@
                         grafiki</p>
                 </div>
             </article>
-
-
-
         </div>
-    </div>
+    </section>
 
     <section id="experienceAndEducation">
         <section id="section_experience" data-aos="fade-right">
-            <img src="photos/suitcase.png" class="img_experience"><h2>Doświadczenie zawodowe</h2>
-            
-            <div class="vl"><span class="circle">
+            <h2>Doświadczenie zawodowe</h2>
+            <img src="photos/suitcase.png" class="img_experience">
+            <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Ekspert ds. sprzedaży w Vectra S.A.</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right"><time>01.04.2019r - Obecnie</time></i></div>
-            <div class="vl"><span class="circle">
+                </span><i class="fa fa-calendar" data-aos="fade-right">  01.04.2019r - Obecnie</i></div>
+            <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Kierownik salonu Orange w Gdańsku</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right"><time>01.03.2018r - 01.06.2018r</time></i></div>
-            <div class="vl"><span class="circle">
+                </span><i class="fa fa-calendar" data-aos="fade-right">  01.03.2018r - 01.06.2018r</i></div>
+            <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Orange Customer Service</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right"><time>01.11.2015r - 01.02.2018r</time></i></div>
-            <div class="vl"><span class="circle">
+                </span><i class="fa fa-calendar" data-aos="fade-right">  01.11.2015r - 01.02.2018r</i></div>
+            <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Solid Security</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right"><time>19.06.2014r - 24.08.2014r</time></i></div>
-            <div class="vl"><span class="circle">
+                </span><i class="fa fa-calendar" data-aos="fade-right">  19.06.2014r - 24.08.2014r</i></div>
+            <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Securitas East SP. Z O.O.</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right"><time>01.08.2013r - 31.12.2013r</time></i></div>
-            <div class="vl"><span class="circle">
+                </span><i class="fa fa-calendar" data-aos="fade-right">  01.08.2013r - 31.12.2013r</i></div>
+            <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Tiger Security</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right"><time>01.05.2013r - 30.07.2013r</time></i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right">  01.05.2013r - 30.07.2013r</i></div>
         </section>
 
         <section id="section_education" data-aos="fade-right">
             <h2>Wykształcenie</h2>
             <img src="photos/graduate-icon.png" class="img_education">
-            <div class="vl"><span class="circle">
+            <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Akademia Wychowania Fizycznego i Sportu im. Jędrzeja Śniadeckiego</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right"><time>2016r - 2017r.</time></i></div>
-            <div class="vl"><span class="circle">
+                </span><i class="fa fa-calendar" data-aos="fade-right">  2016r - 2017r.</i></div>
+            <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Zespół Szkół nr 3 im. Jana III Sobieskiego w Szczytnie</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right"><time>2011r - 2014r</time></i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right">  2011r - 2014r</i></div>
         </section>
     </section>
 
-
-
-
-
     <section id="section_expectations">
         <h1>Oczekiwania</h1>
-        <span>Przede wszystkim szukam pierwszej pracy / stażu jako Front-End Developer, stacjonarnie w Trójmieście. Mam
-            nadzieję znaleźć pracę w której będę nie tylko korzystał z umiejętności które już posiadam, ale również będę
-            mógł się rozwijać.</span>
+        <span>Przede wszystkim szukam pierwszej pracy lub stażu jako Front-End Developer, stacjonarnie w Trójmieście.
+            Mam
+            nadzieję znaleźć pracę w której będę nie tylko korzystał z umiejętności które już posiadam, ale również będą
+            stawiane mi kolejne wyzwania, jak również będę mógł się rozwijać.</span>
     </section>
 
     <div id="map_wrapper">
@@ -200,31 +191,8 @@
 
     <section id="section_projects">
         <div id="section_wrapper">
-        <h2>Przykładowe Projekty</h2>
-
-
-
+            <h2>Przykładowe Projekty</h2>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </section>
 
 
@@ -246,6 +214,7 @@
     <script src="main.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3azvVxi10WMCeJf5I62gAdL3w3tFDvp4&callback=initMap">
     </script>
+
 </body>
 
 </html>

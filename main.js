@@ -1,4 +1,14 @@
+
+window.onload = function() {
+
+    AOS.init();
+    initMap();
+    
+  };
+
 AOS.init();
+
+
 
 
 function initMap() {
@@ -12,5 +22,27 @@ function initMap() {
             map: map
         })
     }
+
+
+let button = document.querySelector(".showMore_about");
+let textAbout = document.querySelector(".text_about");
+let buttonContent = document.querySelector(".button_content");
+
+button.addEventListener("click", function() {
+    if ( textAbout.style.display == "" || textAbout.style.display == "none") {
+    textAbout.style.display = "block";
+    buttonContent.textContent = "Pokaż mniej";
+    } else if ( textAbout.style.display == "block" ) {
+        textAbout.style.display = "none";
+    buttonContent.textContent = "Pokaż więcej";
+    }
+})
+
+
+
+
+
+
+
 
     // AIzaSyB3azvVxi10WMCeJf5I62gAdL3w3tFDvp4
