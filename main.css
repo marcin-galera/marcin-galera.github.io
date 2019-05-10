@@ -273,6 +273,7 @@ footer {
   }
 
   #map {
-    width: 70%;
+    width: 60%;
+    height: 500px;
   }
 }
