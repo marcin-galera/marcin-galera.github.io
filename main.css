@@ -12,6 +12,51 @@ body {
   padding: 0;
 }
 
+
+
+
+
+
+
+
+
+.menu a {
+  padding: 10px;
+  
+}
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 1.1rem;
+}
+
+#main_navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  z-index: 1;
+  height: 100%;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.menu li {
+  margin-right: 15px;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
 #section_first {
   height: 500px;
   width: 100%;
@@ -29,7 +74,7 @@ body {
   object-fit: cover;
 }
 
-#section_first img:nth-child(2) {
+#section_first img:nth-child(3) {
   height: 150px;
   width: 125px;
   border-radius: 32%;
