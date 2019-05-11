@@ -13,22 +13,27 @@
 </head>
 
 <body>
-
-
-
     <section id="section_first">
         <img src="photos/background_imageHeader.jpg" alt="backgroundImage">
-            
-            <nav id="main_navigation">
-                    <ul class="menu">
-                        <a href="#"><li>O mnie</li></a>
-                        <a href="#"><li>Umiejętności</li></a>
-                        <a href="#"><li>Doświadczenie</li></a>
-                        <a href="#"><li>Projekty</li></a>
-                        <a href="#"><li>Kontakt</li></a>
-                    </ul>
-                </nav>
-                <img src="photos/myPhoto.jpg" alt="Marcin Galera">
+
+        <div id="myNav" class="overlay">
+
+            <div class="overlay-content">
+                <a href="#" onclick="openNav()">O mnie</a>
+                <a href="#" onclick="openNav()">Umiejętności</a>
+                <a href="#" onclick="openNav()">Doświadczenie</a>
+                <a href="#" onclick="openNav()">Projekty</a>
+                <a href="#" onclick="openNav()">Kontakt</a>
+            </div>
+
+        </div>
+
+        <div class="burger" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <img src="photos/myPhoto.jpg" class="myPhoto" alt="Marcin Galera">
         <h1>
             <div class="heading_big">Marcin Galera</div>
             <div class="heading_small">Front-End Developer Portfolio</div>
@@ -158,22 +163,22 @@
             <img src="photos/suitcase.png" class="img_experience">
             <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Ekspert ds. sprzedaży w Vectra S.A.</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right">  01.04.2019r - Obecnie</i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right"> 01.04.2019r - Obecnie</i></div>
             <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Kierownik salonu Orange w Gdańsku</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right">  01.03.2018r - 01.06.2018r</i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right"> 01.03.2018r - 01.06.2018r</i></div>
             <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Orange Customer Service</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right">  01.11.2015r - 01.02.2018r</i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right"> 01.11.2015r - 01.02.2018r</i></div>
             <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Solid Security</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right">  19.06.2014r - 24.08.2014r</i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right"> 19.06.2014r - 24.08.2014r</i></div>
             <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Securitas East SP. Z O.O.</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right">  01.08.2013r - 31.12.2013r</i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right"> 01.08.2013r - 31.12.2013r</i></div>
             <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Tiger Security</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right">  01.05.2013r - 30.07.2013r</i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right"> 01.05.2013r - 30.07.2013r</i></div>
         </section>
 
         <section id="section_education" data-aos="fade-right">
@@ -181,10 +186,10 @@
             <img src="photos/graduate-icon.png" class="img_education">
             <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Akademia Wychowania Fizycznego i Sportu im. Jędrzeja Śniadeckiego</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right">  2016r - 2017r.</i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right"> 2016r - 2017r.</i></div>
             <div class="verticalLine"><span class="circle">
                     <h3 data-aos="fade-right">Zespół Szkół nr 3 im. Jana III Sobieskiego w Szczytnie</h3>
-                </span><i class="fa fa-calendar" data-aos="fade-right">  2011r - 2014r</i></div>
+                </span><i class="fa fa-calendar" data-aos="fade-right"> 2011r - 2014r</i></div>
         </section>
     </section>
 
