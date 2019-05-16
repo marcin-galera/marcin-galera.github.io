@@ -26,6 +26,20 @@ function initMap() {
 }
 
 
+let arrowBounce = document.querySelector('.bounce')
+let windowHeight = window.innerHeight
+
+// arrowBounce.addEventListener("click", function () {
+
+//     document.scrollBy(100, 100);
+// })
+function scrollWin() {
+  window.scrollBy(0, windowHeight);
+  animationTime = 520
+}
+
+
+
 let button = document.querySelector(".showMoreAbout");
 let textAbout = document.querySelector(".textAbout");
 let buttonContent = document.querySelector(".buttonContent");
