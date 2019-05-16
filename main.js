@@ -26,9 +26,9 @@ function initMap() {
 }
 
 
-let button = document.querySelector(".showMore_about");
-let textAbout = document.querySelector(".text_about");
-let buttonContent = document.querySelector(".button_content");
+let button = document.querySelector(".showMoreAbout");
+let textAbout = document.querySelector(".textAbout");
+let buttonContent = document.querySelector(".buttonContent");
 
 button.addEventListener("click", function () {
     if (textAbout.style.display == "" || textAbout.style.display == "none") {
@@ -76,31 +76,58 @@ if (window.innerWidth < 600) {
         barOne.classList.remove('change1');
         barTwo.classList.remove('change2');
         barThree.classList.remove('change3');
+    }} else {
+        function hideMenu() {
+            toogleNav.style.width = "100%";
+        }
+
+    }
+
+
+window.onscroll = function () {
+    changeMenuSize()
+};
+
+function changeMenuSize() {
+    if (document.body.scrollTop > 473 || document.documentElement.scrollTop > 473) {
+
+        hrefElements[0].style.padding = "6px 12px 6px 12px";
+        hrefElements[1].style.padding = "6px 12px 6px 12px";
+        hrefElements[2].style.padding = "6px 12px 6px 12px";
+        hrefElements[3].style.padding = "6px 12px 6px 12px";
+        hrefElements[4].style.padding = "6px 12px 6px 12px";
+        menuBar.style.height = "30px";
+    } else {
+        hrefElements[0].style.padding = "7px 20px 7px 20px";
+        hrefElements[1].style.padding = "7px 20px 7px 20px";
+        hrefElements[2].style.padding = "7px 20px 7px 20px";
+        hrefElements[3].style.padding = "7px 20px 7px 20px";
+        hrefElements[4].style.padding = "7px 20px 7px 20px";
+        menuBar.style.height = "40px";
     }
 }
 
 
-window.onscroll = function () {
-    myFunction()
-};
+// if (document.body.scrollTop < 450) {
+//     hrefElements[0].style.backgroundColor = '#34a51a';
+// } else {
+//     hrefElements[0].style.backgroundColor = '#353535'
+// }
 
-function myFunction() {
-    if (document.body.scrollTop > 473 || document.documentElement.scrollTop > 473) {
-        
-            hrefElements[0].style.padding = "6px 12px 6px 12px";
-            hrefElements[1].style.padding = "6px 12px 6px 12px";
-            hrefElements[2].style.padding = "6px 12px 6px 12px";
-            hrefElements[3].style.padding = "6px 12px 6px 12px";
-            hrefElements[4].style.padding = "6px 12px 6px 12px";
-        menuBar.style.backgroundColor = "black";
-        menuBar.style.height = "30px";
-        } else {
-            hrefElements[0].style.padding = "7px 20px 7px 20px";
-            hrefElements[1].style.padding = "7px 20px 7px 20px";
-            hrefElements[2].style.padding = "7px 20px 7px 20px";
-            hrefElements[3].style.padding = "7px 20px 7px 20px";
-            hrefElements[4].style.padding = "7px 20px 7px 20px";
-        menuBar.style.backgroundColor = "black";
-        menuBar.style.height = "40px";
-        }
-    }
+// if (document.body.scrollTop > 450 && document.body.scrollTop < 850) {
+//     hrefElements[1].style.backgroundColor = '#34a51a';
+// } else {
+//     hrefElements[1].style.backgroundColor = '#353535'
+// }
+
+// if (document.body.scrollTop > 850 && document.body.scrollTop < 1300) {
+//     hrefElements[2].style.backgroundColor = '#34a51a';
+// } else {
+//     hrefElements[2].style.backgroundColor = '#353535'
+// }
+
+// if (document.body.scrollTop > 1300 && document.body.scrollTop < 2000) {
+//     hrefElements[3].style.backgroundColor = '#34a51a';
+// } else {
+//     hrefElements[3].style.backgroundColor = '#353535'
+// }
