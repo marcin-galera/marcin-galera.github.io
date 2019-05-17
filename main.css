@@ -204,7 +204,7 @@ body {
 }
 
 .fa {
-  margin-left: 15px;
+
   font-size: 16px;
 }
 
@@ -609,6 +609,7 @@ a { color: white; text-decoration: none; }
 }
 
 .arrow {
+  padding: 1rem;
   margin: auto 0 2rem 0;
   text-align: end;
 }
