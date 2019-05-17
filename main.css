@@ -29,6 +29,7 @@ body {
 
 
 .overlay-content a {
+  position: relative;
   color: white;
   padding:7px 20px 7px 20px;
   transition: 0.3s;

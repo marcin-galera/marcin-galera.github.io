@@ -34,8 +34,7 @@ let windowHeight = window.innerHeight
 //     document.scrollBy(100, 100);
 // })
 function scrollWin() {
-  window.scrollBy(0, windowHeight);
-  animationTime = 520
+  window.scrollTo(0, windowHeight);
 }
 
 
@@ -100,6 +99,7 @@ if (window.innerWidth < 600) {
 
 window.onscroll = function () {
     changeMenuSize()
+    changeBurgerColor()
 };
 
 function changeMenuSize() {
@@ -121,6 +121,17 @@ function changeMenuSize() {
     }
 }
 
+
+function changeBurgerColor() {
+    if (document.body.scrollTop > 606 || document.documentElement.scrollTop > 606) {
+        barOne.style.backgroundColor = "rgb(120, 120, 130)";
+        barTwo.style.backgroundColor = "rgb(120, 120, 130)";
+        barThree.style.backgroundColor = "rgb(120, 120, 130)";
+    } else {
+        barOne.style.backgroundColor = "rgb(255, 255, 255)";
+        barTwo.style.backgroundColor = "rgb(255, 255 , 255)";
+        barThree.style.backgroundColor = "rgb(255, 255, 255)";
+    }}
 
 // if (document.body.scrollTop < 450) {
 //     hrefElements[0].style.backgroundColor = '#34a51a';
