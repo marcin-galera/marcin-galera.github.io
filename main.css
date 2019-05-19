@@ -85,6 +85,7 @@ body {
 }
 
 .contentAbout button {
+  outline-color: rgb(0, 0, 0);
   display: inline-block;
   border-radius: 4px;
   background-color: #ffffff;
@@ -552,7 +553,9 @@ ul{
   .formName input {
     width: 100%;
     padding: 5px;
+
   }
+ 
   
   .formEmail{
     grid-column-start:1;
@@ -562,12 +565,29 @@ ul{
   .formEmail input {
     width: 100%;
     padding: 5px;
+    border-color: rgb(0, 0, 0);
   }
   .formTextArea{
     grid-column-start: 1;
     grid-column-end: 1;
     margin: 0;
   }
+}
+
+.formName input:focus{
+  border-color: rgba(78, 78, 78, 0.8);
+  box-shadow: 0 1px 1px rgba(78, 78, 78, 0.075) inset, 0 0 8px rgba(77, 77, 77, 0.6);
+  outline: 0 none;
+}
+.formEmail input:focus{
+  border-color: rgba(78, 78, 78, 0.8);
+  box-shadow: 0 1px 1px rgba(78, 78, 78, 0.075) inset, 0 0 8px rgba(77, 77, 77, 0.6);
+  outline: 0 none;
+}
+.formTextArea textarea:focus{
+  border-color: rgba(78, 78, 78, 0.8);
+  box-shadow: 0 1px 1px rgba(78, 78, 78, 0.075) inset, 0 0 8px rgba(77, 77, 77, 0.6);
+  outline: 0 none;
 }
 
 @media only screen and (max-width: 400px) {
@@ -631,3 +651,4 @@ a { color: white; text-decoration: none; }
     transform: translateY(-15px);
   }
 }
+
