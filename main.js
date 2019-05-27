@@ -43,7 +43,11 @@ let button = document.querySelector(".showMoreAbout");
 let textAbout = document.querySelector(".textAbout");
 let buttonContent = document.querySelector(".buttonContent");
 
-button.addEventListener("click", function () {
+button.addEventListener("click", myFunction )
+
+
+
+function myFunction () {
     if (textAbout.style.display == "" || textAbout.style.display == "none") {
         textAbout.style.display = "block";
         buttonContent.textContent = "Pokaż mniej";
@@ -51,7 +55,7 @@ button.addEventListener("click", function () {
         textAbout.style.display = "none";
         buttonContent.textContent = "Pokaż więcej";
     }
-})
+}
 
 
 let toogleNav = document.getElementById("myNav");
