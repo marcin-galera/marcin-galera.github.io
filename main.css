@@ -652,3 +652,30 @@ a { color: white; text-decoration: none; }
   }
 }
 
+
+
+
+
+
+
+.entries {
+  border-left: 1px solid black;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+}
+
+.entries > li {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.entries > li:before {
+  content: '';
+  display: inline-block;
+  background: gray;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-left: -25px;
+}
