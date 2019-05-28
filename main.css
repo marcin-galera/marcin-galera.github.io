@@ -143,12 +143,20 @@ body {
 
 .contentAbout {
   padding: 10px 15px 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px 0 30px;
+}
+
+.contentAbout button {
+  align-items: center;
 }
 
 #sectionSkills {
   background-color: rgb(255, 255, 255);
   color: rgb(37, 37, 37);
-  margin-left: 20px;
+  margin: 0 30px 0 30px;
 }
 
 #sectionSkills h2 {
@@ -176,7 +184,8 @@ body {
 
 #experienceAndEducation {
   background-color: rgb(225, 225, 225);
-  padding-top: 35px;
+  padding: 0 30px 0 30px;
+  
 }
 
 #sectionExperience {
@@ -186,22 +195,7 @@ body {
 .imgExperience {
   width: 50px;
   height: 50px;
-  margin-left: 5px;
-}
-
-.verticalLine {
-  display: flex;
-  flex-direction: column;
-  border-left: 2px solid rgb(193, 193, 193);
-  height: 200px;
-  left: 50%;
-  margin-left: 30px;
-  top: 0;
-}
-
-.circle h3 {
-  font-size: 20px;
-  margin: 0 0 0 15px;
+  margin-left: 25px;
 }
 
 .fa {
@@ -214,13 +208,6 @@ body {
   margin-left: 10px;
 }
 
-.circle:before {
-  color: rgb(128, 128, 128);
-  margin-left: -10px;
-  content: ' \25CF';
-  font-size: 30px;
-}
-
 #sectionEducation {
   padding: 0 10px 100px 15px;
 }
@@ -228,7 +215,7 @@ body {
 .imgEducation {
   width: 60px;
   height: 40px;
-  margin-left: 3px;
+  margin-left: 25px;
 }
 
 #mapWrapper {
@@ -245,12 +232,16 @@ body {
 }
 
 #sectionExpectations {
-  background-color: rgb(225, 225, 225);
-
+  background: url(photos/mapBackground.jpg);
+  
+  height: 1000px;
+  background-size: cover;
+  filter: blur(5px)
 }
 .expectationsWraper{
-  margin: 0px 20px 0px 20px;
+  margin: 0px 50px 0px 50px;
   padding: 35px 0 20px 0;
+  filter: none;
 }
 
 #sectionProjects {
@@ -259,7 +250,7 @@ body {
 
 #projectsWrapper {
   padding: 40px 0 40px 0;
-  margin: 0 100px 0 100px;
+  margin: 0 200px 0 200px;
   text-align: center;
 }
 .gridContainer {
@@ -276,19 +267,44 @@ body {
   border: 1px solid black;
 }
 
+#map {
+  width: 100%;
+  height: 200px;
+
+}
+
+#mapWrapper {
+
+}
+
+.wrapperContact {
+  margin: 0 50px 0 50px;
+}
+
 
 @media only screen and (min-width: 600px) {
 
-  .contentAbout button {
-    margin-left: 100px;
+  .textAbout {
+    margin: 0 70px 0;
   }
 
-  .textAbout {
-    margin-left: 20px;
+  #projectsWrapper {
+    padding: 20px 0 20px 0;
+    margin: 0 70px 0 70px;
+  }
+
+  .contentAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentAbout button {
+    align-items: center;
   }
 
   #sectionSkills {
-    margin: 0 50px 0 50px;
+    margin: 0 100px 0 100px;
   }
 
   #sectionExperience {
@@ -300,18 +316,47 @@ body {
   }
 
   .expectationsWraper {
-    margin-left: 50px;
+    margin: 0  90px 0 90px ;
   }
 
   #map {
-    width: 90%;
+    width: 100%;
+    height: 400px;
+  }
+  .wrapperContact {
+    padding: 2rem;
+    margin: 0 70px 0 70px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
 
+  .textAbout {
+    margin: 0 110px 0;
+  }
+
+  #sectionSkills {
+    margin: 0 170px 0 170px;
+  }
+
+  #projectsWrapper {
+    padding: 20px 0 20px 0;
+    margin: 0 250px 0 250px;
+  }
+
+  .expectationsWraper {
+    margin: 0  170px 0 170px ;
+  }
+
+  
+  .contentAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contentAbout button {
-    margin-left: 400px;
+    align-items: center;
   }
 
   .contentSkills {
@@ -329,9 +374,10 @@ body {
   }
 
   #map {
-    width: 60%;
+    width: 70%;
     height: 500px;
   }
+  
 }
 
 
@@ -420,9 +466,7 @@ body {
   }
 
 }
-.wrapperContact {
-  padding: 2rem;
-}
+
 
 
 
@@ -431,9 +475,9 @@ body {
 
 .container{
   max-width:1170px;
+  margin-top: 60px;
   margin-left:auto;
   margin-right:auto;
-  padding:2em;
 }
 
 ul{
@@ -536,7 +580,7 @@ ul{
 
   #projectsWrapper {
     padding: 20px 0 20px 0;
-    margin: 0 20px 0 20px;
+    margin: 0 50px 0 50px;
   }
 
   .contactForm{
@@ -666,8 +710,13 @@ a { color: white; text-decoration: none; }
 }
 
 .entries > li {
+  height: 100px;
   margin: 0;
   padding-left: 20px;
+}
+
+.entries h3, .entries p {
+  margin: 0px;
 }
 
 .entries > li:before {
