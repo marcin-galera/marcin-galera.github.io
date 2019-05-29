@@ -34,7 +34,7 @@ let windowHeight = window.innerHeight
 //     document.scrollBy(100, 100);
 // })
 function scrollWin() {
-  window.scrollTo(0, windowHeight);
+    window.scrollTo(0, windowHeight);
 }
 
 
@@ -43,11 +43,11 @@ let button = document.querySelector(".showMoreAbout");
 let textAbout = document.querySelector(".textAbout");
 let buttonContent = document.querySelector(".buttonContent");
 
-button.addEventListener("click", myFunction )
+button.addEventListener("click", myFunction)
 
 
 
-function myFunction () {
+function myFunction() {
     if (textAbout.style.display == "" || textAbout.style.display == "none") {
         textAbout.style.display = "block";
         buttonContent.textContent = "Pokaż mniej";
@@ -65,6 +65,7 @@ let barTwo = document.querySelector(".bar2");
 let barThree = document.querySelector(".bar3");
 let hrefElements = document.querySelectorAll('.overlay-content > *')
 let menuBar = document.querySelector(".overlay-content")
+var x = document.querySelector(".overlay-content").querySelectorAll("a");
 
 if (window.innerWidth > 600) {
     toogleNav.style.width = '100%';
@@ -79,11 +80,22 @@ function showMenu() {
         barTwo.classList.add('change2');
         barThree.classList.add('change3');
 
+        x[0].innerHTML = "O mnie";
+        x[1].innerHTML = "Umiejętności";
+        x[2].innerHTML = "Doświadczenie";
+        x[3].innerHTML = "Oczekiwania";
+        x[4].innerHTML = "Kontakt";
+
     } else {
         toogleNav.style.width = "0px";
         barOne.classList.remove('change1');
         barTwo.classList.remove('change2');
         barThree.classList.remove('change3');
+        x[0].innerHTML = "";
+        x[1].innerHTML = "";
+        x[2].innerHTML = "";
+        x[3].innerHTML = "";
+        x[4].innerHTML = "";
     }
 }
 
@@ -93,12 +105,15 @@ if (window.innerWidth < 600) {
         barOne.classList.remove('change1');
         barTwo.classList.remove('change2');
         barThree.classList.remove('change3');
-    }} else {
-        function hideMenu() {
-            toogleNav.style.width = "100%";
-        }
 
     }
+} else {
+    function hideMenu() {
+
+        toogleNav.style.width = "100%";
+    }
+
+}
 
 
 window.onscroll = function () {
@@ -127,15 +142,29 @@ function changeMenuSize() {
 
 
 function changeBurgerColor() {
-    if (document.body.scrollTop > 606 || document.documentElement.scrollTop > 606) {
+    if (document.documentElement.scrollTop > 6600) {
         barOne.style.backgroundColor = "rgb(120, 120, 130)";
         barTwo.style.backgroundColor = "rgb(120, 120, 130)";
         barThree.style.backgroundColor = "rgb(120, 120, 130)";
-    } else {
+    }
+    if (document.documentElement.scrollTop < 6600) {
         barOne.style.backgroundColor = "rgb(255, 255, 255)";
         barTwo.style.backgroundColor = "rgb(255, 255 , 255)";
-        barThree.style.backgroundColor = "rgb(255, 255, 255)";
-    }}
+        barThree.style.backgroundColor = "rgb(255, 255, 255)"
+    }
+    if (document.documentElement.scrollTop < 5600) {
+        barOne.style.backgroundColor = "rgb(120, 120, 130)";
+        barTwo.style.backgroundColor = "rgb(120, 120, 130)";
+        barThree.style.backgroundColor = "rgb(120, 120, 130)";
+    }
+    if (document.documentElement.scrollTop < 650) {
+        barOne.style.backgroundColor = "rgb(255, 255, 255)";
+        barTwo.style.backgroundColor = "rgb(255, 255 , 255)";
+        barThree.style.backgroundColor = "rgb(255, 255, 255)"
+    }
+
+
+}
 
 // if (document.body.scrollTop < 450) {
 //     hrefElements[0].style.backgroundColor = '#34a51a';
