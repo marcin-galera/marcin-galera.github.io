@@ -67,21 +67,25 @@ body {
 }
 
 .myPhoto {
-  height: 150px;
-  width: 125px;
-  border-radius: 32%;
-  border: 1px solid black;
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
   margin-top: 175px;
 }
 
 .headingBig {
+  font-size: 2.5rem;
   color: white;
   text-align: center;
+  letter-spacing: 0.3rem;
 }
 
 .headingSmall {
+  font-size: 1.5rem;
   color: white;
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 
 .contentAbout button {
@@ -133,6 +137,8 @@ body {
 
 .textAbout {
   display: none;
+  padding: 30px 0 0 0;
+  line-height: 1.5rem;
 }
 
 .heading {
@@ -284,6 +290,10 @@ body {
 
 .wrapperContact {
   margin: 0 50px 0 50px;
+}
+
+.wrapperContact h2 {
+  text-align: center;
 }
 
 
@@ -560,12 +570,12 @@ ul {
 }
 
 .wrapper {
-  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  box-shadow: 10px 10px 40px 20px rgba(19, 24, 29, 0.8);
 
 }
 
 .company-info {
-  background: rgb(225, 225, 225);
+  background: rgb(180, 180, 180);
   padding: 1rem 1rem 1rem 1rem;
 }
 
@@ -578,6 +588,10 @@ ul {
   background: #ffffff;
   margin: 30px;
 
+}
+
+.contact h3 {
+  text-align: center;
 }
 
 /* FORM STYLES */
@@ -594,7 +608,7 @@ ul {
 .contact form input,
 .contact form textarea {
   width: 100%;
-  border: 1px solid #808080;
+  border: 4px double #808080;
 }
 
 .contantForm p {
@@ -612,7 +626,8 @@ ul {
 
 .formName input {
   width: 100%;
-  padding: 15px 0 15px 15px;
+  padding: 15px 0 15px 0;
+  text-align: center;
 }
 
 .formEmail {
@@ -623,7 +638,8 @@ ul {
 
 .formEmail input {
   width: 100%;
-  padding: 15px 0 15px 15px;
+  padding: 15px 0 15px 0;
+  text-align: center;
 }
 
 .formTextArea {
@@ -632,19 +648,25 @@ ul {
   margin: 0;
 }
 
+.sendBtn {
+  grid-column-start: 2;
+}
+
 .formTextArea textarea {
   width: 100%;
-  padding: 15px 0 15px 15px;
+  padding: 15px 0 15px 0;
   resize: vertical;
+  text-align: center;
 }
 
 .contactForm button {
-  background: rgb(225, 225, 225);
-  border: 0;
+  background: rgb(180, 180, 180);
   padding: 10px;
   text-transform: uppercase;
   width: 20%;
+  box-shadow: 0 0 0 1px #000;
 }
+
 
 .contactForm button:hover,
 .contact form button:focus {
@@ -658,11 +680,7 @@ ul {
 
 @media only screen and (max-width: 630px) {
 
-  .gridContainer {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 200px);
-  }
-  
+
 
   #projectsWrapper {
     padding: 20px 0 20px 0;
@@ -695,23 +713,30 @@ ul {
     margin: 0;
   }
 
+  .sendBtn {
+    grid-column-start: 1;
+    width: 50%;
+  }
+
+
+
 
   .formName input {
     width: 100%;
-    padding: 15px 0 15px 15px;
+    padding: 15px 0 15px 0;
   }
   .formEmail input {
     width: 100%;
-    padding: 15px 0 15px 15px;
+    padding: 15px 0 15px 0;
   }
   .formTextArea textarea {
     width: 100%;
-    padding: 15px 0 15px 15px;
+    padding: 15px 0 15px 0;
     resize: vertical;
   }
 
   .sendBtn {
-    padding: 15px 0 15px 15px;
+    padding: 15px 0 15px 0;
   }
 
   .formTextArea {
