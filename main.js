@@ -142,50 +142,40 @@ function changeMenuSize() {
 
 
 function changeBurgerColor() {
-    if (document.documentElement.scrollTop > 6600) {
-        barOne.style.backgroundColor = "rgb(120, 120, 130)";
-        barTwo.style.backgroundColor = "rgb(120, 120, 130)";
-        barThree.style.backgroundColor = "rgb(120, 120, 130)";
-    }
-    if (document.documentElement.scrollTop < 6600) {
-        barOne.style.backgroundColor = "rgb(255, 255, 255)";
-        barTwo.style.backgroundColor = "rgb(255, 255 , 255)";
-        barThree.style.backgroundColor = "rgb(255, 255, 255)"
-    }
-    if (document.documentElement.scrollTop < 5600) {
-        barOne.style.backgroundColor = "rgb(120, 120, 130)";
-        barTwo.style.backgroundColor = "rgb(120, 120, 130)";
-        barThree.style.backgroundColor = "rgb(120, 120, 130)";
-    }
     if (document.documentElement.scrollTop < 650) {
+        console.log(document.documentElement.scrollTop + "  1")
         barOne.style.backgroundColor = "rgb(255, 255, 255)";
         barTwo.style.backgroundColor = "rgb(255, 255 , 255)";
         barThree.style.backgroundColor = "rgb(255, 255, 255)"
     }
+
+    if (document.documentElement.scrollTop > 650 && document.documentElement.scrollTop < 4600 ) {
+        console.log(document.documentElement.scrollTop + "  2")
+        barOne.style.backgroundColor = "rgb(120, 120, 130)";
+        barTwo.style.backgroundColor = "rgb(120, 120, 130)";
+        barThree.style.backgroundColor = "rgb(120, 120, 130)";
+    }
+
+    if (document.documentElement.scrollTop > 4600 && document.documentElement.scrollTop < 5650) {
+        console.log(document.documentElement.scrollTop + "  3")
+        barOne.style.backgroundColor = "rgb(255, 255, 255)";
+        barTwo.style.backgroundColor = "rgb(255, 255 , 255)";
+        barThree.style.backgroundColor = "rgb(255, 255, 255)"
+    }
+
+    if (document.documentElement.scrollTop > 5650 ) {
+        console.log(document.documentElement.scrollTop + "  2")
+        barOne.style.backgroundColor = "rgb(120, 120, 130)";
+        barTwo.style.backgroundColor = "rgb(120, 120, 130)";
+        barThree.style.backgroundColor = "rgb(120, 120, 130)";
+    }
+
+
+
+
+
+
+
 
 
 }
-
-// if (document.body.scrollTop < 450) {
-//     hrefElements[0].style.backgroundColor = '#34a51a';
-// } else {
-//     hrefElements[0].style.backgroundColor = '#353535'
-// }
-
-// if (document.body.scrollTop > 450 && document.body.scrollTop < 850) {
-//     hrefElements[1].style.backgroundColor = '#34a51a';
-// } else {
-//     hrefElements[1].style.backgroundColor = '#353535'
-// }
-
-// if (document.body.scrollTop > 850 && document.body.scrollTop < 1300) {
-//     hrefElements[2].style.backgroundColor = '#34a51a';
-// } else {
-//     hrefElements[2].style.backgroundColor = '#353535'
-// }
-
-// if (document.body.scrollTop > 1300 && document.body.scrollTop < 2000) {
-//     hrefElements[3].style.backgroundColor = '#34a51a';
-// } else {
-//     hrefElements[3].style.backgroundColor = '#353535'
-// }
