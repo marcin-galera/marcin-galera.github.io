@@ -25,6 +25,10 @@ function initMap() {
     })
 }
 
+document.querySelectorAll("button")[1].addEventListener("click", function(event) {
+    event.preventDefault()
+})
+
 
 let arrowBounce = document.querySelector('.bounce')
 let windowHeight = window.innerHeight
